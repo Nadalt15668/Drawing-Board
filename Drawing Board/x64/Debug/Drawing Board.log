@@ -1,0 +1,9 @@
+﻿  Brush.cpp
+C:\Users\nadav\Desktop\SFML\Drawing Board\Drawing Board\Brush.cpp(41,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\nadav\Desktop\SFML\Drawing Board\Drawing Board\Brush.cpp(53,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nadav\Desktop\SFML\Drawing Board\Drawing Board\Brush.cpp(57,26): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  DrawingBoard.cpp
+  Source.cpp
+C:\Users\nadav\Desktop\SFML\Drawing Board\Drawing Board\Source.cpp(12,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  Drawing Board.vcxproj -> C:\Users\nadav\Desktop\SFML\Drawing Board\x64\Debug\Drawing Board.exe
