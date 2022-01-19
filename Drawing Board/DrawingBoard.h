@@ -7,6 +7,7 @@ public:
 	void Run();
 	void CreateLine();
 	void DrawLines();
+	void Capture(string filename);
 private:
 	RenderWindow* window;
 	Brush brush;

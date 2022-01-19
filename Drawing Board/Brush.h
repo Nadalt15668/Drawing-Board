@@ -2,6 +2,7 @@
 #define _USE_MATH_DEFINES
 #include <conio.h>
 #include <stdio.h>
+#include <iostream>
 #include <math.h>
 #include <vector>
 #include <SFML/Graphics.hpp>

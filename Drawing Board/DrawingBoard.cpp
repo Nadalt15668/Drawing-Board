@@ -30,7 +30,10 @@ void DrawingBoard::Run()
                 brush.ResetPositions();
         }
         if (Keyboard::isKeyPressed(Keyboard::Space))
+        {
+            Capture("screenshot.png");
             lines.clear();
+        }
         Vector2i pixelPos = sf::Mouse::getPosition(*window);
         Vector2f worldPos = window->mapPixelToCoords(pixelPos); // Current position of mouse in our window
 
@@ -87,4 +90,23 @@ void DrawingBoard::DrawLines()
     for (int i = 0; i < lines.size(); i++)
         window->draw(lines[i]);
 
+}
+
+//-----------------------------------------------------------------
+//                             Capture
+//                             -------
+// 
+// Captures current state of RenderWindow
+//-----------------------------------------------------------------
+void DrawingBoard::Capture(string filename)
+{
+    Texture texture;
+    texture.create((*window).getSize().x, (*window).getSize().y);
+    texture.update((*window));
+    if (texture.copyToImage().saveToFile(filename))
+    {
+        cout << "Screenshot saved to " << filename << endl;
+    }
+    else
+        cout << "An error has accured" << endl;
 }
